@@ -1,0 +1,32 @@
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  @extend %list;
+}
+.customers-list__item {
+  width: 168px;
+  height: 88px;
+}
+.customers-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  @extend %link;
+  color: $color-light-slate;
+  border: 1px solid $color-light-slate;
+  border-radius: 4px;
+
+  transition: border $trannsition, color $trannsition;
+}
+.castomers-link__icon {
+  fill: currentColor;
+}
+.customers-list__link:hover,
+.customers-list__link:focus {
+  color: $color-ocean;
+  border-color: $color-ocean;
+}

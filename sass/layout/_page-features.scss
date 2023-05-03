@@ -1,0 +1,36 @@
+.page-features {
+  padding: 120px 0;
+}
+.features-list {
+  display: flex;
+  gap: 24px;
+
+  @extend %list;
+}
+.features-list__item {
+  flex-basis: calc((100% - 72px) / 4);
+}
+.box-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 264px;
+  height: 112px;
+
+  /* CLOUD */
+
+  background: $color-cloud;
+  border-radius: 4px;
+}
+.features-list__box-icon {
+  margin-bottom: 8px;
+}
+.features-item__head {
+  @include text-style-header-3();
+  color: $color-navy-blue;
+}
+.features-item__paragraf {
+  @include text-style-body();
+  color: $color-slate;
+}

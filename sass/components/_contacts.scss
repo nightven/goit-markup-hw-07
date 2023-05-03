@@ -1,0 +1,23 @@
+.header__adress {
+  margin-left: 76px;
+  margin-left: auto;
+}
+.adress-list {
+  @include center-flex(flex);
+  @extend %list;
+  gap: 40px;
+}
+.adress-list__link {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  @include font(16px, 'Roboto', 400, normal, 24px, 0.02em, none, none);
+  @extend %link;
+  color: $color-slate;
+  transition: color $trannsition;
+}
+
+.adress-list__link:hover,
+.adress-list__link:focus {
+  color: $color-ocean;
+}

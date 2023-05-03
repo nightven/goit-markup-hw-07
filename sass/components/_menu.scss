@@ -1,0 +1,41 @@
+.nav {
+  @include center-flex(flex);
+
+  @include font(16px, 'Roboto', 500, normal, 24px, 0.02em, none, none);
+}
+.nav__list {
+  @include center-flex(flex);
+  gap: 40px;
+  @extend %list;
+}
+.page-heder__nav {
+  margin-left: 76px;
+}
+.nav-list__link {
+  position: relative;
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  @extend %link;
+  color: $color-navy-blue;
+  transition: color $trannsition;
+}
+.nav-list__link_current {
+  color: $color-ocean;
+}
+.nav-list__link_current::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -1px;
+
+  background: $color-ocean;
+  color: $color-ocean;
+  border-radius: 2px;
+}
+.nav-list__link:hover,
+.nav-list__link:focus {
+  color: $color-ocean;
+}

@@ -1,0 +1,26 @@
+.page-hero {
+  padding: 188px 0;
+  max-width: 1440px;
+  min-height: 600px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--dark-color);
+
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url('../../images/main/people-office.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero-container {
+  margin: 0 auto;
+}
+.hero__title {
+  max-width: 496px;
+  text-align: center;
+  margin: 0 auto;
+
+  @include text-style-header-1();
+
+  color: $color-white;
+}

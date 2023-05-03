@@ -1,0 +1,105 @@
+@mixin center-flex($display) {
+  display: #{$display};
+  align-items: center;
+}
+//typografi
+@mixin font(
+  $f-size,
+  $f-family,
+  $f-weight,
+  $f-style,
+  $l-height,
+  $lt-spacing,
+  $t-decoration,
+  $t-transform,
+  $f-fam-other: sans-serif
+) {
+  font-size: $f-size;
+  font-family: $f-family, $f-fam-other;
+  font-weight: $f-weight;
+  font-style: $f-style;
+  line-height: $l-height/$f-size;
+  letter-spacing: $lt-spacing;
+  text-decoration: $t-decoration;
+  text-transform: $t-transform;
+}
+@mixin text-style-header-1() {
+  font-size: 56px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-style: normal;
+  line-height: 60px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-style-header-2() {
+  font-size: 36px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-style: normal;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+@mixin text-style-header-3() {
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-style-body() {
+  font-size: 16px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-style-body-medium() {
+  font-size: 16px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-style-button-text() {
+  font-size: 16px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-style-small-text() {
+  font-size: 12px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-style-link-text() {
+  font-size: 12px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-decoration: underline;
+  text-transform: none;
+}

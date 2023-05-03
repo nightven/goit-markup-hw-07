@@ -1,0 +1,27 @@
+.close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: auto;
+  margin-bottom: 24px;
+
+  width: 24px;
+  height: 24px;
+
+  border: none;
+  border-radius: 50%;
+  background-color: $color-cornflower;
+  background-size: cover;
+
+  transition: color $trannsition, background $trannsition;
+}
+.close-btn__icon {
+  fill: currentColor;
+}
+.close-btn:hover,
+.close-btn:focus {
+  background-color: $color-ocean;
+  color: $color-white;
+  cursor: pointer;
+}

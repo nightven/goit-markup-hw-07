@@ -1,0 +1,9 @@
+.page-castomers {
+  padding: 120px 0;
+  text-align: center;
+}
+.page-castomers__title {
+  margin-bottom: 72px;
+  @include text-style-header-2();
+  color: $color-navy-blue;
+}

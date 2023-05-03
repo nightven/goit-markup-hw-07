@@ -1,0 +1,37 @@
+.page-team {
+  padding: 120px 0;
+  background-color: $color-cloud;
+}
+.page-team__title {
+  text-align: center;
+  @include text-style-header-2();
+  color: $color-navy-blue;
+  margin-bottom: 72px;
+}
+.team-list {
+  display: flex;
+  gap: 24px;
+  @extend %list;
+}
+.team-list__item {
+  text-align: center;
+  flex-basis: calc((100% - 72px) / 4);
+
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  background-color: $color-white;
+}
+.team-descr {
+  padding: 32px 0;
+  border-radius: 0px 0px 4px 4px;
+}
+.team-list__title {
+  margin-bottom: 8px;
+  @include text-style-header-3();
+}
+.team-list__paragraf {
+  margin-bottom: 8px;
+  @include text-style-body();
+  color: $color-slate;
+}

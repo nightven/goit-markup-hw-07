@@ -1,0 +1,27 @@
+bady {
+  @include font(16px, 'Roboto', 500, normal, 24px, 0.02em, none, none);
+  color: $color-slate;
+  background-color: $color-white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+button,
+input,
+textarea {
+  outline: none;
+}

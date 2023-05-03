@@ -1,0 +1,100 @@
+.page-footer {
+  padding: 100px 0;
+  background-color: $color-navy-blue;
+  .container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+// logo
+.footer-logo {
+  display: inline-block;
+  align-items: center;
+  margin-right: 120px;
+}
+.page-footer__logo {
+  margin-bottom: 16px;
+}
+.footer-logo__text {
+  width: 264px;
+  @include text-style-body();
+  color: $color-cloud;
+}
+//social
+.footer-social {
+  margin-right: 80px;
+}
+.footer-social__title {
+  margin-bottom: 16px;
+
+  @include text-style-body-medium();
+
+  color: $color-white;
+}
+.footer-list {
+  gap: 16px;
+}
+
+.link_color-activ:hover,
+.link_color-activ:focus {
+  background-color: $color-green;
+}
+
+//subscrible
+.footer-subscrible__title {
+  margin-bottom: 16px;
+  @include text-style-body-medium();
+  color: $color-white;
+}
+.subscrible-form {
+  display: flex;
+}
+.subscrible-label_input {
+  display: inline-block;
+  padding-left: 16px;
+  margin-right: 24px;
+  width: 264px;
+  height: 40px;
+  border: 1px solid $color-white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  color: $color-white;
+  background-color: $color-navy-blue;
+  transition: background $trannsition;
+}
+
+.subscrible-label_input::placeholder {
+  @include font(12px, 'Roboto', 400, normal, 24px, 0.02em, none, none);
+  color: $color-white;
+}
+//button
+.subscr-btn {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 24px;
+  gap: 16px;
+
+  min-width: 165px;
+  height: 40px;
+  /* IRIS */
+
+  background: $color-iris;
+  border-radius: 4px;
+  border: none;
+
+  color: $color-white;
+  cursor: pointer;
+
+  transition: background var(--transition-role);
+}
+.subscr-btn:hover,
+.subscr-btn:focus {
+  background-color: $color-ocean;
+}
+
+.btn-icon__svg {
+  fill: currentColor;
+}
