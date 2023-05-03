@@ -8,6 +8,7 @@
 
 // header
 @import './components/container';
+
 @import './components/page-header';
 @import './components/logo';
 @import './components/menu';
@@ -26,7 +27,7 @@
 @import './layout/page-product';
 @import './layout/page-team';
 @import './layout/page-customers';
-
+@import './components/mobile-menu';
 //portfoloi
 @import './components/filter-buttons';
 @import './components/cards';

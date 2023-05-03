@@ -15,12 +15,25 @@
 .hero-container {
   margin: 0 auto;
 }
-.hero__title {
-  max-width: 496px;
-  text-align: center;
-  margin: 0 auto;
+/* Phone styles & > */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .hero__title {
+    max-width: 320px;
+    text-align: center;
+    margin: 0 auto;
+    @include text-style-header-2();
+    color: $color-white;
+  }
+}
+/* Tablet styles & > */
+@media only screen and (min-width: 768px) {
+  .hero__title {
+    max-width: 496px;
+    text-align: center;
+    margin: 0 auto;
 
-  @include text-style-header-1();
+    @include text-style-header-1();
 
-  color: $color-white;
+    color: $color-white;
+  }
 }

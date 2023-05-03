@@ -1,6 +1,16 @@
-@mixin center-flex($display) {
-  display: #{$display};
+@mixin center-flex($display, $wrap: nowrap) {
+  display: $display;
+  flex-wrap: $wrap;
   align-items: center;
+}
+@mixin list() {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+@mixin link() {
+  text-decoration: none;
 }
 //typografi
 @mixin font(
@@ -18,7 +28,7 @@
   font-family: $f-family, $f-fam-other;
   font-weight: $f-weight;
   font-style: $f-style;
-  line-height: $l-height/$f-size;
+  line-height: calc($l-height/$f-size);
   letter-spacing: $lt-spacing;
   text-decoration: $t-decoration;
   text-transform: $t-transform;

@@ -1,23 +1,45 @@
-.header__adress {
-  margin-left: 76px;
-  margin-left: auto;
-}
-.adress-list {
-  @include center-flex(flex);
-  @extend %list;
-  gap: 40px;
-}
-.adress-list__link {
-  padding-top: 24px;
-  padding-bottom: 24px;
-
-  @include font(16px, 'Roboto', 400, normal, 24px, 0.02em, none, none);
-  @extend %link;
-  color: $color-slate;
-  transition: color $trannsition;
+@media only screen and (max-width: 767px) {
+  .address-list {
+    display: none;
+  }
 }
 
-.adress-list__link:hover,
-.adress-list__link:focus {
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .address-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    @include list();
+  }
+  .header__address {
+    display: flex;
+    margin-left: auto;
+  }
+  .address-list__link {
+    @include text-style-small-text();
+
+    @include link();
+    color: $color-slate;
+    transition: color $trannsition;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .address-list {
+    gap: 40px;
+  }
+  .adress-list {
+    @include center-flex(flex);
+    @include list();
+    gap: 40px;
+  }
+  .address-list__link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    @include font(16px, 'Roboto', 400, normal, 24px, 0.02em, none, none);
+  }
+}
+
+.address-list__link:hover,
+.address-list__link:focus {
   color: $color-ocean;
 }

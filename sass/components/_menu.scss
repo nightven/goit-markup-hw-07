@@ -1,26 +1,47 @@
-.nav {
-  @include center-flex(flex);
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .nav__list {
+    display: none;
+  }
+}
+@media only screen and (min-width: 767px) {
+  .nav {
+    @include center-flex(flex);
+    @include font(16px, 'Roboto', 500, normal, 24px, 0.02em, none, none);
+  }
 
-  @include font(16px, 'Roboto', 500, normal, 24px, 0.02em, none, none);
-}
-.nav__list {
-  @include center-flex(flex);
-  gap: 40px;
-  @extend %list;
-}
-.page-heder__nav {
-  margin-left: 76px;
-}
-.nav-list__link {
-  position: relative;
-  display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  .nav__list {
+    display: flex;
+    gap: 40px;
+    @include list();
+  }
+  .page-heder__nav {
+    margin-left: 120px;
+  }
+  .nav-list__link {
+    position: relative;
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
-  @extend %link;
-  color: $color-navy-blue;
-  transition: color $trannsition;
+    @include link();
+    color: $color-navy-blue;
+    transition: color $trannsition;
+  }
 }
+@media only screen and (min-width: 1258px) {
+  .nav__list {
+    margin-left: 76px;
+  }
+}
+// // .nav__list {
+// //   @include center-flex(flex);
+// //   gap: 40px;
+// //   @extend %list;
+// }
+// .page-heder__nav {
+//   margin-left: 76px;
+// }
+
 .nav-list__link_current {
   color: $color-ocean;
 }
