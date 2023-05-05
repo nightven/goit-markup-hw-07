@@ -1,6 +1,6 @@
 .logo {
   @include center-flex(flex);
-  @include font(18px, 'Raleway', 800, normal, 21px, 0.03em, none, uppercase);
+  @include font('Raleway', 18px, 800, 21px, 0.03em, none, uppercase);
   @extend %link;
   color: $color-iris;
 }

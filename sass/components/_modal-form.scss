@@ -24,7 +24,7 @@
 }
 .modal-form__descr {
   margin-bottom: 4px;
-  @include font(12px, 'Roboto', 400, normal, 14px, 0.04em, none, none);
+  @include font('Roboto', 12px, 400, 14px, 0.04em, none, none);
   color: $color-light-slate;
 }
 .modal-form__svg {

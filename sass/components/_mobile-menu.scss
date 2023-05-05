@@ -76,7 +76,9 @@
   color: $color-navy-blue;
   text-decoration: none;
 }
-
+.menu__link_current {
+  color: $color-ocean;
+}
 // contacts
 .menu__contact-list {
   display: flex;

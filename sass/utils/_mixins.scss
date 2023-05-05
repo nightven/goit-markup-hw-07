@@ -2,6 +2,7 @@
   display: $display;
   flex-wrap: $wrap;
   align-items: center;
+  // justify-content: center;
 }
 @mixin list() {
   margin: 0;
@@ -13,26 +14,48 @@
   text-decoration: none;
 }
 //typografi
-@mixin font(
-  $f-size,
-  $f-family,
-  $f-weight,
-  $f-style,
-  $l-height,
-  $lt-spacing,
-  $t-decoration,
-  $t-transform,
-  $f-fam-other: sans-serif
-) {
+@mixin font($f-family, $f-size, $f-weight, $l-height, $lt-spacing, $t-decoration, $t-transform) {
+  font-family: $f-family, sans-serif;
   font-size: $f-size;
-  font-family: $f-family, $f-fam-other;
   font-weight: $f-weight;
-  font-style: $f-style;
-  line-height: calc($l-height/$f-size);
+  line-height: calc($l-height / $f-size);
   letter-spacing: $lt-spacing;
   text-decoration: $t-decoration;
   text-transform: $t-transform;
+  font-style: normal;
 }
+@mixin mobile {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media only screen and (min-width: 768px) and (max-width: 1157px) {
+    @content;
+  }
+}
+@mixin tablet-desktop {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media only screen and (min-width: 1158px) {
+    @content;
+  }
+}
+@mixin element($name) {
+  @at-root #{&}__#{$name} {
+    @content;
+  }
+}
+
+@mixin modifier($name) {
+  @at-root #{&}_#{$name} {
+    @content;
+  }
+}
+
 @mixin text-style-header-1() {
   font-size: 56px;
   font-family: 'Roboto';

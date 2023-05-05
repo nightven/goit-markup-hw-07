@@ -4,7 +4,7 @@
   padding: 16px 32px;
   min-width: 169px;
   height: 56px;
-  @include font(16px, 'Roboto', 500, normal, 24px, 0.02em, none, none);
+  @include font('Roboto', 16px, 500, 24px, 0.02em, none, none);
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
