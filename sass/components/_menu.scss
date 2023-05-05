@@ -29,6 +29,9 @@
     color: $color-navy-blue;
     transition: color $trannsition;
   }
+  .nav__link_current {
+    color: $color-ocean;
+  }
 }
 @media only screen and (min-width: 1258px) {
   .nav__list {

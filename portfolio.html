@@ -15,36 +15,51 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="page-header">
+    <header class="header">
       <!-- Header section -->
       <div class="container header__cotainer">
         <!-- navigation menu -->
-        <nav class="nav header-nav">
+        <nav class="nav header__nav">
           <!-- Logo -->
           <a href="./index.html" class="logo">Web<span class="logo_color-black">Studio</span> </a>
-          <ul class="nav__list page-heder__nav">
-            <li class="nav-list__item">
-              <a href="./index.html" class="nav-list__link">Studio</a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link">Studio</a>
             </li>
-            <li class="nav-list__item">
-              <a href="./portfolio.html" class="nav-list__link nav-list__link_current">Portfolio</a>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link nav__link_current">Portfolio</a>
             </li>
-            <li class="nav-list__item">
-              <a href="" class="nav-list__link">Contacts</a>
+            <li class="nav__item">
+              <a href="" class="nav__link">Contacts</a>
             </li>
           </ul>
         </nav>
         <!-- adress -->
-        <address class="address header__adress">
-          <ul class="adress-list">
-            <li class="adress-list__item">
-              <a href="mailto:info@devstudio.com" class="adress-list__link">info@devstudio.com</a>
+        <address class="address header__address">
+          <ul class="address__list">
+            <li class="address__item">
+              <a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a>
             </li>
-            <li class="adress-list__item">
-              <a href="tel:+110001111111" class="adress-list__link">+11 (000) 111-11-11</a>
+            <li class="address__item">
+              <a href="tel:+110001111111" class="address__link">+11 (000) 111-11-11</a>
             </li>
           </ul>
         </address>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
       </div>
     </header>
     <!--main content  -->
