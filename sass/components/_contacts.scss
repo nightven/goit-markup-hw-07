@@ -2,12 +2,16 @@
   @include mobile {
     display: none;
   }
-}
-.address__list {
   @include tablet {
     display: flex;
     flex-direction: column;
     row-gap: 12px;
+    @include list();
+  }
+  @include desktop {
+    display: flex;
+    margin-left: auto;
+    gap: 40px;
     @include list();
   }
 }
@@ -21,21 +25,9 @@
 .address__link {
   @include tablet {
     @include font('Roboto', 12px, 400, 14px, 0.04em, none, none);
-
     @include link();
     color: $color-slate;
   }
-}
-
-.address__list {
-  @include desktop {
-    display: flex;
-    @include list();
-    margin-left: auto;
-    gap: 40px;
-  }
-}
-.address__link {
   @include desktop {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -44,22 +36,6 @@
     transition: color $trannsition;
   }
 }
-
-// @media only screen and (min-width: 1158px) {
-//   .adress__list {
-//     @include center-flex(flex);
-//     @include list();
-//     gap: 40px;
-//   }
-//   .address__link {
-//     padding-top: 24px;
-//     padding-bottom: 24px;
-//     @include font('Roboto', 16px, 400, 24px, 0.02em, none, none);
-//     color: $color-slate;
-//     transition: color $trannsition;
-//   }
-// }
-
 .address__link:hover,
 .address__link:focus {
   color: $color-ocean;
