@@ -1,18 +1,37 @@
-// mobile
 .footer {
   padding: 96px 0;
   height: 668px;
+  @include desktop {
+    height: 312px;
+  }
   background-color: $color-navy-blue;
   .container {
     display: flex;
-    flex-wrap: wrap;
+    @include mobile {
+      flex-wrap: wrap;
+    }
   }
 }
 
+.footer__logo {
+  margin-bottom: 16px;
+}
 .footer-logo__text {
   width: 264px;
   @include font('Roboto', 16px, 400, 24px, 0.02em, none, none);
   color: $color-cloud;
+}
+.footer-social__title {
+  margin-bottom: 16px;
+  color: $color-white;
+}
+.footer-subscrible__title {
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  color: $color-white;
 }
 // mobile
 .footer-logo {
@@ -42,61 +61,52 @@
     justify-content: center;
     align-content: center;
     margin-bottom: 16px;
-    color: $color-white;
   }
 }
-// .footer {
-//   padding: 100px 0;
-//   background-color: $color-navy-blue;
-//   .container {
-//     display: flex;
+// tablet
+.footer {
+  @include tablet {
+    height: 456px;
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      padding: 0 108px;
+    }
+  }
+}
+.footer-logo {
+  @include tablet {
+    width: 264px;
+    margin-right: 24px;
+    margin-bottom: 72px;
+  }
+}
+.footer-social__title {
+  @include tablet {
+    margin-bottom: 16px;
+  }
+}
 
-//     align-items: baseline;
-//   }
-// logo
-// .footer-logo {
-//   display: inline-block;
-//   align-items: center;
-//   margin-right: 120px;
-// }
-// .footer__logo {
-//   margin-bottom: 16px;
-// }
-
-//social
-// .footer-social {
-//   margin-right: 80px;
-// }
-// .footer-social__title {
-//   margin-bottom: 16px;
-
-//   @include text-style-body-medium();
-
-//   color: $color-white;
-// }
-// .footer-list {
-//   gap: 16px;
-// }
-
-// .link_color-activ:hover,
-// .link_color-activ:focus {
-//   background-color: $color-green;
-// }
+.link_color-activ:hover,
+.link_color-activ:focus {
+  background-color: $color-green;
+}
 
 //subscrible
-
+.subscrible-label_input::placeholder {
+  @include font('Roboto', 12px, 400, 24px, 0.02em, none, none);
+  color: $color-white;
+}
+// mobile
 .footer-subscrible__title {
   @include mobile {
     margin-bottom: 16px;
     display: flex;
     justify-content: center;
-    font-size: 16px;
-    font-weight: 500;
-
-    color: $color-white;
   }
 }
-// mobile
+
 .footer-subscrible {
   @include mobile {
     width: 100%;
@@ -128,30 +138,49 @@
     background-color: $color-navy-blue;
   }
 }
-// .subscrible-form {
-//   display: flex;
-//   flex-wrap: wrap;
-//   gap: 16px;
-// }
-// .subscrible-label_input {
-//   display: inline-block;
-//   padding-left: 16px;
-//   margin-right: 24px;
-//   width: 264px;
-//   height: 40px;
-//   border: 1px solid $color-white;
-//   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-//   border-radius: 4px;
+//tablet
+.footer-subscrible__title {
+  @include tablet {
+    margin-bottom: 16px;
+  }
+}
+.subscrible-label_input {
+  @include tablet-desktop {
+    display: inline-block;
+    padding-left: 16px;
+    margin-right: 24px;
+    width: 264px;
+    height: 40px;
+    border: 1px solid $color-white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
 
-//   color: $color-white;
-//   background-color: $color-navy-blue;
-//   transition: background $trannsition;
-// }
-
-// .subscrible-label_input::placeholder {
-//   @include font('Roboto', 12px, 400, 24px, 0.02em, none, none);
-//   color: $color-white;
-// }
+    color: $color-white;
+    background-color: $color-navy-blue;
+    transition: background $trannsition;
+  }
+}
+//desktop
+.footer-logo {
+  @include desktop {
+    margin-right: 120px;
+  }
+}
+.footer-social {
+  @include desktop {
+    margin-right: 80px;
+  }
+}
+.footer-subscrible {
+  @include desktop {
+    display: block;
+  }
+}
+.subscrible-form {
+  @include desktop {
+    display: flex;
+  }
+}
 
 //button
 .subscr-btn {
