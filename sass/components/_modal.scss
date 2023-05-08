@@ -20,3 +20,15 @@
   @include text-style-body-medium();
   color: $color-navy-blue;
 }
+@media screen and (max-width: 1199px) {
+  .modal {
+    top: 10%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 100%;
+  }
+}

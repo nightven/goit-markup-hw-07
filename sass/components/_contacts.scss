@@ -24,6 +24,7 @@
 }
 .address__link {
   @include tablet {
+    display: block;
     @include font('Roboto', 12px, 400, 14px, 0.04em, none, none);
     @include link();
     color: $color-slate;

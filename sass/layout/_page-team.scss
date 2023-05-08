@@ -1,5 +1,23 @@
 .page-team {
-  padding: 120px 0;
+  @include mobile {
+    .container {
+      height: 2040px;
+    }
+    padding: 96px 0;
+  }
+  @include tablet {
+    .container {
+      height: 1034px;
+    }
+    padding: 96px 0;
+  }
+  @include desktop {
+    padding: 120px 0;
+    .container {
+      height: 542px;
+    }
+  }
+
   background-color: $color-cloud;
 }
 .page-team__title {
@@ -12,9 +30,20 @@
   display: flex;
   gap: 24px;
   @extend %list;
+  @include mobile {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 72px;
+  }
+  @include tablet {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px 24px;
+  }
 }
 .team-list__item {
   text-align: center;
+
   flex-basis: calc((100% - 72px) / 4);
 
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),

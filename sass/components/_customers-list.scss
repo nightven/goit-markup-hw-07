@@ -3,6 +3,14 @@
   justify-content: center;
   gap: 24px;
   @extend %list;
+  @include mobile {
+    flex-wrap: wrap;
+    gap: 72px 16px;
+  }
+  @include tablet {
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
 }
 .customers-list__item {
   width: 168px;
