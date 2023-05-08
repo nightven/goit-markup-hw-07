@@ -24,10 +24,10 @@
           <a href="./index.html" class="logo">Web<span class="logo_color-black">Studio</span> </a>
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="./index.html" class="nav__link">Studio</a>
+              <a href="./index.html" class="nav__link nav__link_current">Studio</a>
             </li>
             <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link nav__link_current">Portfolio</a>
+              <a href="./portfolio.html" class="nav__link">Portfolio</a>
             </li>
             <li class="nav__item">
               <a href="" class="nav__link">Contacts</a>
@@ -46,18 +46,8 @@
           </ul>
         </address>
         <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
+          <svg class="menu-toggle__icon" width="32" height="22">
+            <use href="./images/icon.svg#icon-burger-menu"></use>
           </svg>
         </button>
       </div>
@@ -98,7 +88,7 @@
               <a href="" class="cards-link">
                 <div class="overlay-wrapper">
                   <img
-                    src="./images/portfolio/row1/banking-app.jpg"
+                    src="./images/portfolio/bank-lg@1x.jpg"
                     alt="Banking App Interface Concept"
                     width="360"
                   />
@@ -118,11 +108,7 @@
             <li class="cards-item">
               <a href="" class="cards-link">
                 <div class="overlay-wrapper">
-                  <img
-                    src="./images/portfolio/row1/cashles-payment.jpg"
-                    alt="Cashless Payment"
-                    width="360"
-                  />
+                  <img src="./images/portfolio/cash-lg@1x.jpg" alt="Cashless Payment" width="360" />
                   <div class="overlay-wrapper__screen">
                     <p class="overlay-wrapper__paragraf">
                       14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -139,11 +125,7 @@
             <li class="cards-item">
               <a href="" class="cards-link">
                 <div class="overlay-wrapper">
-                  <img
-                    src="./images/portfolio/row1/meditacion-app.jpg"
-                    alt="Meditation App"
-                    width="360"
-                  />
+                  <img src="./images/portfolio/app-lg@1x.jpg" alt="Meditation App" width="360" />
                   <div class="overlay-wrapper__screen">
                     <p class="overlay-wrapper__paragraf">
                       14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -160,11 +142,7 @@
             <li class="cards-item">
               <a href="" class="cards-link">
                 <div class="overlay-wrapper">
-                  <img
-                    src="./images/portfolio/row2/taxi-service.jpg"
-                    alt="Taxi Service"
-                    width="360"
-                  />
+                  <img src="./images/portfolio/taxi-lg@1x.jpg" alt="Taxi Service" width="360" />
                   <div class="overlay-wrapper__screen">
                     <p class="overlay-wrapper__paragraf">
                       14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -182,7 +160,7 @@
               <a href="" class="cards-link">
                 <div class="overlay-wrapper">
                   <img
-                    src="./images/portfolio/row2/screen-illustrations.jpg"
+                    src="./images/portfolio/screen-lg@1x.jpg"
                     alt="Screen Illustrations"
                     width="360"
                   />
@@ -203,7 +181,7 @@
               <a href="" class="cards-link">
                 <div class="overlay-wrapper">
                   <img
-                    src="./images/portfolio/row2/online-courses.jpg"
+                    src="./images/portfolio/courses-lg@1x.jpg"
                     alt="Online Courses"
                     width="360"
                   />
@@ -224,7 +202,7 @@
               <a href="" class="cards-link">
                 <div class="overlay-wrapper">
                   <img
-                    src="./images/portfolio/row3/instagram.jpg"
+                    src="./images/portfolio/inst-lg@1x.jpg"
                     alt="Instagram Stories Concept"
                     width="360"
                   />
@@ -244,11 +222,7 @@
             <li class="cards-item">
               <a href="" class="cards-link">
                 <div class="overlay-wrapper">
-                  <img
-                    src="./images/portfolio/row3/organic-food.jpg"
-                    alt="Organic Food"
-                    width="360"
-                  />
+                  <img src="./images/portfolio/food-lg@1x.jpg" alt="Organic Food" width="360" />
                   <div class="overlay-wrapper__screen">
                     <p class="overlay-wrapper__paragraf">
                       14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -265,11 +239,7 @@
             <li class="cards-item">
               <a href="" class="cards-link">
                 <div class="overlay-wrapper">
-                  <img
-                    src="./images/portfolio/row3/fresh-coffee.jpg"
-                    alt="Fresh Coffee"
-                    width="360"
-                  />
+                  <img src="./images/portfolio/fresh-lg@1x.jpg" alt="Fresh Coffee" width="360" />
                   <div class="overlay-wrapper__screen">
                     <p class="overlay-wrapper__paragraf">
                       14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -379,5 +349,89 @@
         </div>
       </div>
     </footer>
+
+    <!-- mobile menu window-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button type="button" class="menu-btn js-close-menu" data-modal-close>
+        <svg class="menu-btn__icon" width="8" height="8">
+          <use href="./images/icon.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="menu-list menu-container_menu">
+        <li class="mobile-menu__item">
+          <a href="./index.html" class="mobile-menu__link">Studio</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="./portfolio.html" class="mobile-menu__link menu__link_current">Portfolio</a>
+        </li>
+        <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Contacts</a></li>
+      </ul>
+
+      <ul class="contact-list menu__contact-list">
+        <li class="contact-list__item">
+          <a href="mailto:info@devstudio.com" class="contact-list__link">info@devstudio.com</a>
+        </li>
+        <li class="contact-list__item">
+          <a href="tel:+110001111111" class="contact-list__link contact-list__link_color-iris"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+      </ul>
+
+      <ul class="social-list menu__social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="social-link__icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="social-link__icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="social-link__icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="social-link__icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script defer src="js/mobile-menu.js"></script>
+    <!-- Modal script -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
