@@ -1,17 +1,7 @@
 .page-features {
   padding: 96px 0;
-  .container {
-    height: 624px;
-  }
-  @include tablet {
-    .container {
-      height: 312px;
-    }
-  }
+
   @include desktop {
-    .container {
-      height: 224px;
-    }
     padding: 120px 0;
   }
 }

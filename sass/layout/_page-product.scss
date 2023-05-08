@@ -2,11 +2,7 @@
   @include mobile-tablet {
     display: none;
   }
-  @include desktop {
-    .container {
-      height: 412px;
-    }
-  }
+
   padding-bottom: 120px;
 }
 .page-product__title {

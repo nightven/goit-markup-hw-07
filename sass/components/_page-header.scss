@@ -6,4 +6,7 @@
 .header__cotainer {
   @include center-flex(flex);
   margin: 0 auto 0 auto;
+  @include mobile {
+    height: 70px;
+  }
 }

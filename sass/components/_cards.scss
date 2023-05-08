@@ -4,10 +4,20 @@
   column-gap: 24px;
   row-gap: 48px;
   @extend %list;
+  @include mobile {
+    gap: 48px;
+    justify-content: center;
+  }
 }
 .cards-item {
   width: 360px;
   background-color: $color-white;
+  @include mobile {
+    width: 396px;
+  }
+  @include tablet {
+    width: 356px;
+  }
 }
 .cards-link {
   display: block;

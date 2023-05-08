@@ -1,21 +1,12 @@
 .page-team {
   @include mobile {
-    .container {
-      height: 2040px;
-    }
     padding: 96px 0;
   }
   @include tablet {
-    .container {
-      height: 1034px;
-    }
     padding: 96px 0;
   }
   @include desktop {
     padding: 120px 0;
-    .container {
-      height: 542px;
-    }
   }
 
   background-color: $color-cloud;

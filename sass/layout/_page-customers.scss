@@ -1,23 +1,12 @@
 .page-castomers {
   @include mobile {
     padding: 96px 0;
-    .container {
-      height: 520px;
-    }
   }
   @include tablet {
     padding: 96px 0;
-    .container {
-      height: 360px;
-    }
   }
   padding: 120px 0;
   text-align: center;
-  @include desktop {
-    .container {
-      height: 200px;
-    }
-  }
 }
 .page-castomers__title {
   margin-bottom: 72px;
