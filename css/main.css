@@ -1620,6 +1620,17 @@ textarea {
 .menu__social-list {
   gap: 56px;
 }
+@media only screen and (max-width: 767px) {
+  .menu__social-list {
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .social-list__item {
+    flex-shrink: 0;
+  }
+}
 
 .portfolio-filter {
   display: flex;
@@ -1631,6 +1642,7 @@ textarea {
   .portfolio-filter {
     flex-wrap: wrap;
     justify-content: start;
+    gap: 16px 24px;
   }
 }
 

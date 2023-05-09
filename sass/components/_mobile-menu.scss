@@ -120,4 +120,12 @@
 // social list
 .menu__social-list {
   gap: 56px;
+  @include mobile {
+    margin-right: auto;
+  }
+}
+.social-list__item {
+  @include mobile {
+    flex-shrink: 0;
+  }
 }

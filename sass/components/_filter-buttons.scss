@@ -8,6 +8,7 @@
   @include mobile {
     flex-wrap: wrap;
     justify-content: start;
+    gap: 16px 24px;
   }
 }
 .page-portfolio__filter {
