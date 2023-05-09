@@ -1,30 +1,3 @@
-.menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin-left: auto;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  border-radius: 50%;
-  outline: none;
-}
-
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
-}
-
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 .menu-container {
   position: fixed;
   top: 0;
@@ -44,12 +17,56 @@
 .menu-container.is-open {
   transform: translateX(0);
 }
+// open menu button
+.menu-toggle {
+  @include mobile {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    padding: 0;
+    width: 32px;
+    height: 22px;
+    color: $color-navy-blue;
+    background-size: cover;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+  }
+  @include tablet-desktop {
+    display: none;
+  }
+}
+.menu-toggle__icon {
+  stroke: $color-navy-blue;
+}
 
-.menu-container .menu-toggle {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #fff;
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+//close menu button
+.menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: auto;
+  margin-bottom: 24px;
+
+  width: 24px;
+  height: 24px;
+
+  border: 1px solid $color-cornflower;
+  border-radius: 50%;
+  background-color: $color-white;
+  background-size: cover;
 }
 @media only screen and (max-width: 768px) {
   .menu__address {
@@ -103,35 +120,4 @@
 // social list
 .menu__social-list {
   gap: 56px;
-}
-.menu-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin-left: auto;
-  margin-bottom: 24px;
-
-  width: 24px;
-  height: 24px;
-
-  border: 1px solid $color-cornflower;
-  border-radius: 50%;
-  background-color: $color-white;
-  background-size: cover;
-}
-.menu-toggle {
-  @include mobile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    width: 32px;
-    height: 22px;
-    color: $color-navy-blue;
-    background-size: cover;
-  }
-}
-.menu-toggle__icon {
-  stroke: $color-navy-blue;
 }
