@@ -5,6 +5,14 @@
   margin: 0 auto;
   text-align: center;
   background-color: var(--dark-color);
+  @include mobile {
+    padding: 112px 0;
+    min-height: 432px;
+  }
+  @include tablet {
+    padding: 112px 0;
+    min-height: 436px;
+  }
 
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../../images/main/hero/bg-img-mobile@1x.jpg);

@@ -1123,6 +1123,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   margin-left: auto;
   margin-bottom: 24px;
   width: 24px;
@@ -1156,6 +1157,18 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media only screen and (max-width: 767px) {
+  .page-hero {
+    padding: 112px 0;
+    min-height: 432px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .page-hero {
+    padding: 112px 0;
+    min-height: 436px;
+  }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .page-hero {
@@ -1626,6 +1639,11 @@ textarea {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .menu__social-list {
+    gap: 30px;
+  }
+}
 @media only screen and (max-width: 767px) {
   .social-list__item {
     flex-shrink: 0;

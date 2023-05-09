@@ -124,6 +124,11 @@
     margin-right: auto;
   }
 }
+@media only screen and (max-width: 400px) {
+  .menu__social-list {
+    gap: 30px;
+  }
+}
 .social-list__item {
   @include mobile {
     flex-shrink: 0;
