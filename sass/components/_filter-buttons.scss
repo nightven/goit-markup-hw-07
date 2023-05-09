@@ -15,6 +15,9 @@
 }
 .filter-list__btn {
   padding: 12px 24px;
+  @include mobile {
+    padding: 8px 16px;
+  }
 
   @include text-style-body();
 
