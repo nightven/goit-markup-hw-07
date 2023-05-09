@@ -387,7 +387,6 @@ textarea {
 
 .container {
   /* Phone styles & > */
-  min-width: 320px;
   max-width: 448px;
   margin: 0 auto;
   padding-left: 16px;
@@ -1494,7 +1493,7 @@ textarea {
 @media only screen and (max-width: 767px) {
   .menu-toggle {
     position: absolute;
-    top: 16px;
+    top: 24px;
     right: 16px;
     color: #fff;
     display: flex;
